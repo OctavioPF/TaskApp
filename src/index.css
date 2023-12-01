@@ -1,0 +1,58 @@
+body {
+  animation: cambio-color 10s infinite alternate;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@keyframes cambio-color {
+  0% {
+    background-color: #0d0d0d; /* Color inicial */
+  }
+  50% {
+    background-color: #312b37; /* Color intermedio */
+  }
+  100% {
+    background-color: #9666ff; /* Color final */
+  }
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Estilos del menú */
+nav {
+  background-color: #000;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+ #menu {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  background-color:aqua;
+  border-radius: 5px;
+}
