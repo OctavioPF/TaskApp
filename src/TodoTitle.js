@@ -1,13 +1,12 @@
 import './TodoTitle.css'
-//parametros en react  se llaman props
-const estilos = {
- 
-}
-function TodoTitle({total, completed, palabra}) {
+import React from 'react';
+
+
+function TodoTitle({total, completed}) {
     
   return (
     <h1 >
-        Has completado {completed} de {total} tareas  {palabra}
+        Has completado {completed} de {total} tareas 
     </h1>
   )
 }
