@@ -7,7 +7,6 @@ import React from 'react';
 
 //van a hacer estados 
 const defaultTodos = [
-  { text: 'Cortar cebolla', completed: true },
   { text: 'Finalizar curso de React', completed: false },
   { text: 'Realizar CV', completed: true },
   { text: 'Agregar proyecto a GITHUB', completed: false },
@@ -25,13 +24,30 @@ function App() {
       return todo.text.toLowerCase().includes(searchValue);
     }
   );
+
+  const completeTodo = (text) => {
+    const newTodos = [...todos];
+    const todoIndex = newTodos.findIndex(
+      (todo) => todo.text == text
+    );
+    newTodos[todoIndex].completed = true;
+    setTodos(newTodos);
+  };
+
+  const deleteTodo = (text) => {
+    const newTodos = [...todos];
+    const todoIndex = newTodos.findIndex(
+      (todo) => todo.text == text
+    );
+    newTodos.splice(todoIndex,1);
+    setTodos(newTodos);
+  };
   
   const completedTodos = todos.filter(
     todo => !!todo.completed
   ).length;
   const totalTodos = todos.length;
 
-  console.log('Los usuarios buscan todos de ' + searchValue);
   return (
     <>
       <TodoTitle
@@ -49,6 +65,8 @@ function App() {
             key={todo.text}
             text={todo.text}
             completed={todo.completed}
+            onComplete={() => completeTodo(todo.text)}
+            onDelete={() => deleteTodo(todo.text)}
           />
         ))}
       </TodoList>
