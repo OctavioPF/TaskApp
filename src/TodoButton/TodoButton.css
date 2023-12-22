@@ -1,0 +1,40 @@
+/* Estilos para el botón Agregar */
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: aqua; /* Color de fondo del botón */
+    color: black; /* Color del texto del botón */
+    cursor: pointer;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el borde y la sombra */
+    box-shadow: 0 4px 8cqb rgba(0, 0, 0, 0.1); /* Sombra alrededor del input */
+
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.5);
+
+    background-color: #8e7; /* Cambia el color de fondo al pasar el cursor por encima */
+    /* Puedes ajustar otros estilos adicionales para el efecto hover si lo deseas */
+  }
+  
+  button:focus {
+    outline: none; /* Elimina el contorno al enfocar el botón */
+  }
+  
+  /* Estilos para el botón Agregar cuando está deshabilitado */
+  button:disabled {
+    background-color: #d1d1d1; /* Color de fondo cuando el botón está deshabilitado */
+    color: #a3a3a3; /* Color del texto cuando el botón está deshabilitado */
+    cursor: not-allowed; /* Cambia el cursor cuando el botón está deshabilitado */
+  }
+  
