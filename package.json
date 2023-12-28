@@ -28,5 +28,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  }, 
+
+  "homepage": "file:///C:/Users/octav/Documents/Proyectos%20de%20web/REACT-JS/TaskApp/build/index.html",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+}
 }

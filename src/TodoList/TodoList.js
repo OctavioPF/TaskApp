@@ -1,10 +1,14 @@
 import React from 'react'
+import './TodoList.css';
 
 function TodoList({children}) {
   return (
-    <ul className="TodoList">
+    <div className='container'>
+      <ul className="TodoList">
       {children}
     </ul>
+    </div>
+    
   );
 }
 

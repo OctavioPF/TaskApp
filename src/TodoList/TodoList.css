@@ -1,5 +1,11 @@
+.container {
+    margin: 0px 20% 0px 20%;
+    text-align: center; /* Centra horizontalmente el contenido */
+}
+
 .TodoList {
     margin: 0;
-    padding: 0 0 56px 0;
+    align-items: center;
+    padding: 20px 0 56px 0;
     list-style: none;
 }
